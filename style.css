@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300;400;600;700');
+
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+    background-image: url('picture.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Calendar{
+     width: 300px; 
+    height: auto;
+    background: #fff;
+    box-sizing: border-box;
+    box-shadow: 0 5px 50px rgba(0,0,0 , .5);
+}
+.Calendar .image{
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    padding: 20px;
+    box-sizing: border-box;
+    background:url('picture1.png');
+}
+.Calendar .image h2, 
+.Calendar .image h3{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, .2 );
+}
+.Calendar .image h3{
+
+font-weight: 500;
+
+}
+
+
+.Calendar .date{
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(25px, 1fr ) );
+    grid-gap: 10px;
+    box-sizing: border-box;
+
+}
+.Calendar .date div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    color: #262626;
+}
+.Calendar .date div.day{
+    font-weight: 700;
+}
+.Calendar .date div.day:first-child{
+    color:  #1a86c4 ;
+    font-weight: 700;
+}
+.Calendar .date div.day-number:nth-child(7n + 1){
+        color: #1a86c4;
+        font-weight: 700;
+
+
+}
+.Calendar .date div.day-number.active,
+.Calendar .date div.day-number:hover 
+{
+    background: #01405bc3;
+    color: #fff;
+    font-weight: 700;
+    cursor:pointer ;
+    
+}
